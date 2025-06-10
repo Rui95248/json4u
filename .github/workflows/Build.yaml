@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest #运行在乌班图linux上
     steps:
       - name: Checkout #步骤1：checkout
-      - uses: actions/checkout@v4 #checkout需要引用的依赖
+        uses: actions/checkout@v4 #checkout需要引用的依赖
       - uses: actions/setup-node@v4
         with:
           node-version: 20
