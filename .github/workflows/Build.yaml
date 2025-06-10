@@ -19,7 +19,7 @@ jobs:
 
       # - run: cp -rp icons ./dist
       # - run: |
-      - run: ls -lth
+      - run: ls -lath
       - run: find ./ -iname "*.html*" -type f
       # - run: cd dist
       # - run: zip -r ../dist.zip ./*
