@@ -21,7 +21,7 @@ jobs:
       # - run: |
       - run: ls -lath ./.next
       - run: find ./ -iname "*.html*" -type f
-      - run: tar -zcvf ./dist.tgz ./*
+      - run: tar -zcvf ./dist.tgz ./.next/*
       # - run: cd dist
       # - run: zip -r ../dist.zip ./*
 
