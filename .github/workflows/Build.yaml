@@ -21,11 +21,12 @@ jobs:
       # - run: |
       - run: ls -lath ./.next
       - run: find ./ -iname "*.html*" -type f
+      - run: tar -zcvf ./dist.tgz ./*
       # - run: cd dist
       # - run: zip -r ../dist.zip ./*
 
-      # - name: Archive production artifacts
-      #   uses: actions/upload-artifact@v4
-      #   with:
-      #     name: build-artifacts
-      #     path: dist.zip
+      - name: Archive production artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-artifacts
+          path: dist.tgz
